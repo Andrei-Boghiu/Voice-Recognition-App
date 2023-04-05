@@ -1,0 +1,55 @@
+:root {
+    --color1: rgba(33, 95, 218, 0.7);
+    --color2: rgb(54, 188, 205);
+    --color3: rgba(45, 132, 225, 0.7);
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    margin: 0px;
+    overflow: auto;
+    place-items: center;
+    animation: background-pan 10s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--color1),
+        var(--color2),
+        var(--color3),
+        var(--color2),
+        var(--color1)
+    );
+    background-size: 200%;
+}
+
+button {
+  background-color: #000000;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 5%;
+  padding: 16px 24px;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.45) 0 9px 16px;
+}
+
+.box {
+    border: 2px solid #1A1A1A;
+    padding: auto;
+    margin: auto;
+    border: #000000;
+    border-radius: 1px;
+}

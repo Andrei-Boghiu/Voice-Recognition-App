@@ -1,15 +1,15 @@
 const btn = document.querySelector(".talk");
 const content = document.querySelector(".content");
-const textOutput = document.querySelector(".TextOutput");
 
 // Speech outputs --------------------------
+
 const greetings = [
     "Hello",
     "Hey, how are you?",
     "howdy!"
  ];
 
- const weather = ["The weather outside is cold as shit?"];
+ const weather = ["The weather outside is cold"];
 
  const whoAMI = ["You are Batman"];
 
